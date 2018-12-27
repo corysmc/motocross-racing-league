@@ -8,7 +8,7 @@ export class AppHome {
   render() {
     return [
       <ion-header>
-        <ion-toolbar color="primary">
+        <ion-toolbar color="dark">
           <ion-title>Motocross Racing League</ion-title>
         </ion-toolbar>
       </ion-header>,

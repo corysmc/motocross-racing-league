@@ -1,6 +1,7 @@
 .image-wrapper {
   position: relative;
-  padding-bottom: 40%;
+  padding-bottom: 33%;
+  max-height: 400px;
   overflow: hidden;
 }
 
