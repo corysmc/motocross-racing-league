@@ -82,6 +82,11 @@ export class SeriesPage {
                 </ion-label>
               </ion-item>
             ))}
+          {this.series.asterisk ? (
+            <p>
+              <label padding>{this.series.asterisk}</label>
+            </p>
+          ) : null}
         </ion-list>
         <div padding />
       </ion-content>
