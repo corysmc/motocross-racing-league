@@ -44,3 +44,14 @@
   --ion-backdrop-color: rgba(19, 27, 40, 1);
   --ion-background-md-color: #f9f9f9;
 }
+
+ion-content,
+ion-item-divider {
+  --background: #f1f1f1;
+}
+
+ion-list {
+  background: #f1f1f1 !important;
+  max-width: 420px;
+  margin: 0 auto !important;
+}

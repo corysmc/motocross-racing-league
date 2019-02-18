@@ -13,31 +13,48 @@ import 'ionicons';
 
 export namespace Components {
 
-  interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
-
-  interface AppProfile {
-    'name': string;
+  interface AppHome {
+    'raceseries': RaceSeries[];
   }
-  interface AppProfileAttributes extends StencilHTMLAttributes {
-    'name'?: string;
+  interface AppHomeAttributes extends StencilHTMLAttributes {
+    'raceseries'?: RaceSeries[];
   }
 
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
+
+  interface ScrollHeader {
+    'defaultHref': string;
+    'headerTitle': string;
+    'img': string;
+  }
+  interface ScrollHeaderAttributes extends StencilHTMLAttributes {
+    'defaultHref'?: string;
+    'headerTitle'?: string;
+    'img'?: string;
+  }
+
+  interface SeriesPage {
+    'series': RaceSeries;
+  }
+  interface SeriesPageAttributes extends StencilHTMLAttributes {
+    'series'?: RaceSeries;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
-    'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
+    'ScrollHeader': Components.ScrollHeader;
+    'SeriesPage': Components.SeriesPage;
   }
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
-    'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
+    'scroll-header': Components.ScrollHeaderAttributes;
+    'series-page': Components.SeriesPageAttributes;
   }
 
 
@@ -47,28 +64,36 @@ declare global {
     new (): HTMLAppHomeElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
-  };
-
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLScrollHeaderElement extends Components.ScrollHeader, HTMLStencilElement {}
+  var HTMLScrollHeaderElement: {
+    prototype: HTMLScrollHeaderElement;
+    new (): HTMLScrollHeaderElement;
+  };
+
+  interface HTMLSeriesPageElement extends Components.SeriesPage, HTMLStencilElement {}
+  var HTMLSeriesPageElement: {
+    prototype: HTMLSeriesPageElement;
+    new (): HTMLSeriesPageElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
-    'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
+    'scroll-header': HTMLScrollHeaderElement
+    'series-page': HTMLSeriesPageElement
   }
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'scroll-header': HTMLScrollHeaderElement;
+    'series-page': HTMLSeriesPageElement;
   }
 
 

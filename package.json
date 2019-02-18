@@ -15,11 +15,11 @@
     "test.watch": "stencil test --spec --e2e --watch"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-rc.0",
+    "@ionic/core": "^4.0.1",
     "date-fns": "^2.0.0-alpha.27"
   },
   "devDependencies": {
-    "@stencil/core": "0.16.1",
+    "@stencil/core": "^0.18.0",
     "@types/jest": "23.3.10",
     "@types/puppeteer": "1.11.1",
     "jest": "23.6.0",
