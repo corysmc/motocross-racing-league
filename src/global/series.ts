@@ -195,7 +195,7 @@ export const raceseries: RaceSeries[] = [
   {
     title: "Up In Smoke",
     slug: "up-in-smoke",
-    img: "/assets/img/fast-moto.jpg",
+    img: "/assets/img/vintage-moto.jpg",
     description: "Utah's first vintage only series!",
     races: [
       {
@@ -222,27 +222,27 @@ export const raceseries: RaceSeries[] = [
     classes: [
       {
         name: "250cc + A",
-        race_order: 1
+        race_order: 2
       },
       {
         name: "250cc + C",
-        race_order: 1
+        race_order: 2
       },
       {
         name: "125cc - 249cc",
-        race_order: 1
+        race_order: 4
       },
       {
         name: "1996 and older A",
-        race_order: 1
+        race_order: 5
       },
       {
         name: "1996 and older C",
-        race_order: 1
+        race_order: 5
       },
       {
         name: "1986 and older",
-        race_order: 1
+        race_order: 3
       },
       {
         name: "Air cooled / Drum Brake",
