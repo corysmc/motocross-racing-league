@@ -20,7 +20,6 @@ export class ContactPage {
           </div>
         ) : (
           <form
-            action="/contact/success"
             name="contact"
             method="POST"
             netlify-honeypot="bot-field"
@@ -33,6 +32,10 @@ export class ContactPage {
                   <ion-input name="bot-field" />
                 </ion-item>
               </div>
+              <ion-item-divider>Name: </ion-item-divider>
+              <ion-item>
+                <ion-input name="name" />
+              </ion-item>
               <ion-item-divider>Email: </ion-item-divider>
               <ion-item>
                 <ion-input name="email" />
