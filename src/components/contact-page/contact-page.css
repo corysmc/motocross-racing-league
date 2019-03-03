@@ -1,0 +1,9 @@
+contact-page .hidden-form {
+  visibility: hidden;
+  height: 0;
+}
+
+contact-page .submit-wrapper {
+  text-align: right;
+  margin-top: 10px;
+}

@@ -42,6 +42,9 @@ export class AppHome {
           </a>
         </div>
         <div padding />
+        <div padding>
+          <ion-anchor href="/contact">Contact Us</ion-anchor>
+        </div>
       </ion-content>
     ];
   }

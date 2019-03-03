@@ -48,6 +48,14 @@ export class AppRoot {
               componentProps={{ series }}
             />
           ))}
+          <ion-route url="/contact" component="contact-page" />
+          <ion-route
+            url="/contact/success"
+            component="contact-page"
+            componentProps={{
+              success: true
+            }}
+          />
         </ion-router>
         <ion-nav />
       </ion-app>

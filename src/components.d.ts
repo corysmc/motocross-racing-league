@@ -23,6 +23,13 @@ export namespace Components {
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
+  interface ContactPage {
+    'success': boolean;
+  }
+  interface ContactPageAttributes extends StencilHTMLAttributes {
+    'success'?: boolean;
+  }
+
   interface ScrollHeader {
     'defaultHref': string;
     'headerTitle': string;
@@ -46,6 +53,7 @@ declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
     'AppRoot': Components.AppRoot;
+    'ContactPage': Components.ContactPage;
     'ScrollHeader': Components.ScrollHeader;
     'SeriesPage': Components.SeriesPage;
   }
@@ -53,6 +61,7 @@ declare global {
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
     'app-root': Components.AppRootAttributes;
+    'contact-page': Components.ContactPageAttributes;
     'scroll-header': Components.ScrollHeaderAttributes;
     'series-page': Components.SeriesPageAttributes;
   }
@@ -70,6 +79,12 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLContactPageElement extends Components.ContactPage, HTMLStencilElement {}
+  var HTMLContactPageElement: {
+    prototype: HTMLContactPageElement;
+    new (): HTMLContactPageElement;
+  };
+
   interface HTMLScrollHeaderElement extends Components.ScrollHeader, HTMLStencilElement {}
   var HTMLScrollHeaderElement: {
     prototype: HTMLScrollHeaderElement;
@@ -85,6 +100,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'app-root': HTMLAppRootElement
+    'contact-page': HTMLContactPageElement
     'scroll-header': HTMLScrollHeaderElement
     'series-page': HTMLSeriesPageElement
   }
@@ -92,6 +108,7 @@ declare global {
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'contact-page': HTMLContactPageElement;
     'scroll-header': HTMLScrollHeaderElement;
     'series-page': HTMLSeriesPageElement;
   }

@@ -177,7 +177,11 @@ export const raceseries: RaceSeries[] = [
         race_order: 8
       },
       {
-        name: "Over 50",
+        name: "Over 50 A",
+        race_order: 5
+      },
+      {
+        name: "Over 50 C",
         race_order: 5
       },
       {
