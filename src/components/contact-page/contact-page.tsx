@@ -25,6 +25,7 @@ export class ContactPage {
             netlify-honeypot="bot-field"
             data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <ion-list>
               <div class="hidden-form">
                 <ion-item>
