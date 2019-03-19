@@ -233,7 +233,7 @@ export const raceseries: RaceSeries[] = [
         race_order: 2
       },
       {
-        name: "125cc - 249cc",
+        name: "125cc (up to 150cc)",
         race_order: 4
       },
       {
