@@ -16,7 +16,8 @@ export class SeriesPage {
       <ion-content scrollEvents={true} onIonScroll={e => (this.e = e)}>
         <ion-list no-padding>
           <ion-item-divider color="danger" sticky>
-            <h2>Tentative Race Schedule</h2>
+            <ion-icon name="warning" slot="start" color="light" />
+            <h5>All Races Postponed until further notice</h5>
           </ion-item-divider>
           <ion-item-divider>
             <h6>
