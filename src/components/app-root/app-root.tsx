@@ -41,12 +41,15 @@ export class AppRoot {
             component="app-home"
             componentProps={{ raceseries: this.raceseries }}
           />
-          {this.raceseries.map(series => (
+          {/* {this.raceseries.map(series => (
             <ion-route
               url={`/${series.slug}`}
               component="series-page"
               componentProps={{ series }}
             />
+          ))} */}
+          {this.raceseries.map(series => (
+            <ion-route-redirect from={`/${series.slug}`} to="/" />
           ))}
           <ion-route url="/contact" component="contact-page" />
           <ion-route

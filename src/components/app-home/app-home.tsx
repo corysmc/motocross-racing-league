@@ -16,7 +16,11 @@ export class AppHome {
         img="/assets/img/moto-tires.jpg"
       />,
       <ion-content scrollEvents={true} onIonScroll={e => (this.e = e)}>
-        <ion-grid>
+        <ion-item-divider color="danger" sticky>
+          <ion-icon name="warning" slot="start" color="light" />
+          <h5>All Races postponed until further notice</h5>
+        </ion-item-divider>
+        {/* <ion-grid>
           <ion-row>
             {this.raceseries.map(series => (
               <ion-col size="12" sizeSm="6" sizeMd="3">
@@ -24,7 +28,6 @@ export class AppHome {
                   <ion-card>
                     <img src={series.img} />
                     <ion-card-header>
-                      {/* <ion-card-subtitle>{series.}</ion-card-subtitle> */}
                       <ion-card-title>{series.title}</ion-card-title>
                     </ion-card-header>
 
@@ -34,7 +37,7 @@ export class AppHome {
               </ion-col>
             ))}
           </ion-row>
-        </ion-grid>
+        </ion-grid> */}
         <div padding>
           <h1>Motocross Photos</h1>
           <a href="https://motofotos.photoreflect.com/">
